@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مصطفى محمد | تصميم مواقع</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--main:#1dbf73;--bg:#f8f9fa;--card:#fff;--text:#222}
+body.dark{--bg:#121212;--card:#1e1e1e;--text:#eee}
+*{transition:0.3s} body{font-family:'Cairo';background:var(--bg);margin:0;color:var(--text)}
+.container{max-width:1050px;margin:auto;padding:20px}
+header{background:linear-gradient(135deg,#1dbf73,#0e9e5a);color:#fff;padding:90px 20px;text-align:center;border-radius:0 0 50px 50px}
+.btn{background:#fff;color:#1dbf73;padding:14px 32px;text-decoration:none;border-radius:50px;display:inline-block;font-weight:800;margin-top:15px}
+.btn-dark{background:var(--main);color:#fff;padding:10px 22px;border-radius:50px;text-decoration:none;display:inline-block;font-weight:bold;font-size:14px}
+.card{background:var(--card);padding:30px;border-radius:20px;margin-top:-45px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:30px}
+.project{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.06)}
+.project .img{height:210px;display:flex;align-items:center;justify-content:center;font-size:65px;color:#fff}
+.project .info{padding:22px}
+#darkBtn{position:fixed;top:20px;left:20px;background:var(--card);border:none;width:48px;height:48px;border-radius:50%;cursor:pointer;font-size:22px;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:99}
+</style>
+</head>
+<body>
+<button id="darkBtn" onclick="toggleDark()">🌙</button>
+<header>
+<h1>موقعك هو اللي بيبيع</h1>
+<p>أصمم لك موقع سريع واحترافي يخلي العميل يثق فيك ويطلب فوراً</p>
+<a href="https://wa.me/201026796723" target="_blank" class="btn">واتساب: 01026796723</a>
+</header>
+<div class="container">
+<div class="card">
+<h2>أحول فكرتك لموقع يجيب عملاء</h2>
+<p>أنا مصطفى، مطور HTML/CSS/JS بكود نظيف بدون ووردبريس. موقعك سريع، متجاوب، وجاهز للبيع في 24 ساعة.</p>
+</div>
+<h2 style="text-align:center;margin:60px 0 20px;font-weight:800;font-size:30px">معرض أعمالي - لايف</h2>
+<div class="portfolio">
+<div class="project"><div class="img" style="background:linear-gradient(135deg,#00c6ff,#0072ff)">🛒</div><div class="info"><h4>1. متجر إلكتروني</h4><p>Tech Store - متجر كامل</p><a href="https://mms805136-design.github.io/tech-store/" target="_blank" class="btn-dark">🔗 معاينة لايف</a></div></div>
+<div class="project"><div class="img" style="background:linear-gradient(135deg,#11998e,#38ef7d)">🏢</div><div class="info"><h4>2. موقع شركة</h4><p>Company Website - احترافي</p><a href="https://mms805136-design.github.io/company-website/" target="_blank" class="btn-dark">🔗 معاينة لايف</a></div></div>
+<div class="project"><div class="img" style="background:linear-gradient(135deg,#ff6a00,#ee0979)">🚀</div><div class="info"><h4>3. صفحة هبوط</h4><p>Landing Page - تبيع خدمتك</p><a href="https://mms805136-design.github.io/-landing-page/" target="_blank" class="btn-dark">🔗 معاينة لايف</a></div></div>
+</div>
+<div style="background:var(--card);padding:35px;border-radius:20px;text-align:center;margin-top:50px;border:2px solid var(--main)">
+<h2>عايز واحد زيهم؟</h2><a href="https://wa.me/201026796723?text=عايز%20موقع%20زي%20معرض%20اعمالك" target="_blank" class="btn-dark" style="font-size:18px;padding:14px 32px">كلمني الآن 01026796723</a>
+</div>
+</div>
+<script>
+function toggleDark(){document.body.classList.toggle('dark');document.getElementById('darkBtn').textContent=document.body.classList.contains('dark')?'☀️':'🌙'}
+</script>
+</body>
+</html>
